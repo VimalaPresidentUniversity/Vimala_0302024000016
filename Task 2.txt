@@ -1,0 +1,27 @@
+#include<iostream>
+
+using namespace std;
+
+class Manga {
+public:
+    string title;
+    string author;
+    int year;
+    int volumes;
+
+    void displayDetails() {
+        cout << "The manga \"" << title << "\" is authored by " << author 
+             << ", first published in " << year << ", with a total of " 
+             << volumes << " volumes." << endl;
+    }
+};
+
+int main() {
+    Manga manga1;
+    manga1.title = "Attack on Titan";
+    manga1.author = "Hajime Isayama";
+    manga1.year = 2009;
+    manga1.volumes = 34;
+    manga1.displayDetails();
+    return 0;
+}
